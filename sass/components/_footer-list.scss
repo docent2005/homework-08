@@ -1,0 +1,21 @@
+.footer-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.footer-list__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: $foter-no-general;
+    transition: color $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $general;
+    }
+}

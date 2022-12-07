@@ -1,0 +1,33 @@
+.section5-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section5-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icons;
+    border-radius: 4px;
+    transition: border $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border: 1px solid $logo-blu;
+    }
+}
+
+.section5-list__icon {
+    fill: $icons;
+    width: 106px;
+    height: 60px;
+    transition: fill $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+    .section5-list__link:hover &,
+    .section5-list__link:focus & {
+        fill: $logo-blu;
+    }
+}

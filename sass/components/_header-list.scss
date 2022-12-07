@@ -1,0 +1,45 @@
+.header-list {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14285714;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+    gap: 50px;
+}
+
+.header-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $text-no-general;
+    transition: color $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: $logo-blu;
+    }   
+}
+
+.header-list__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    fill: $text-no-general;
+    transition: fill $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+    .header-list__link:hover &,
+    .header-list__link:focus & {
+        fill: $logo-blu;
+    }
+}
+
+.emile {
+    width: 16px;
+    height: 12px;
+}
+
+.tell {
+    width: 10px;
+    height: 16px;
+}

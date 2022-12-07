@@ -1,0 +1,40 @@
+.checkbox {
+    padding: 10px 12px;
+}
+
+.checkbox__label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857;
+    letter-spacing: 0.03em;
+    color: $text-no-general;
+}
+
+.checkbox__label>a {
+    margin-left: 4px;
+    color: $logo-blu;
+    text-decoration: underline;
+}
+
+.checkbox__input {
+    margin: 0px;
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox__icon {
+    border: 2px solid $text;
+    background-origin: border-box;
+    border-radius: 2px;
+    margin-right: 5px;
+    width: 16px;
+    height: 15px;
+    fill: $general;
+    margin-right: 8.38px;
+    .checkbox__input:checked+ & {
+        background-color: $logo-blu;
+        border-color: transparent;
+    }
+}

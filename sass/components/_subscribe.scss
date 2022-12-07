@@ -1,0 +1,36 @@
+.subscribe {
+    padding-top: 12px;
+}
+
+.subscribe__forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe__lable {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.subscribe__input {
+    margin-top: 20px;
+    width: 420px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: $general;
+    background-color: transparent;
+}
+
+.subscribe__button>svg {
+    width: 24px;
+    height: 24px;
+    fill: $general;
+
+}
