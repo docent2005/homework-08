@@ -1,3 +1,11 @@
+.nav {
+    margin-left: 93px;
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
 .navigation {
     display: flex;
     gap: 50px;

@@ -1,17 +1,23 @@
 .header {
-    padding: 24px 0px 24px 0px;
-    text-align: center;
+    padding: 10px 0px 10px 0px;
+    @media screen and (min-width:768px) {
+        padding: 19px 0px 19px 0px;
+    }
+    @media screen and (min-width:1200px) {
+        padding: 24px 0px 24px 0px;
+    }
+
+}
+
+.header>.contaner{
+    align-items: center;
+
 }
 
 .header-port {
     border-bottom: 1px solid $border;
 }
 
-.header>.contaner {
-    align-items: center;
-}
 
-.nav {
-    margin-left: 93px;
-}
+
 

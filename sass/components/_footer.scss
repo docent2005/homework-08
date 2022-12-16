@@ -1,16 +1,20 @@
 .footer {
-    
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px;
     background-color: $footer;
     color: $general;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+    @media screen and (min-width:1200px) {
+        text-align: left; 
+    }
     &>.contaner{
         display: flex;
         flex-direction: column;
         gap: 60px;
+        @media screen and (min-width:1200px) {
+            flex-direction: row; 
+        }
     }
 }

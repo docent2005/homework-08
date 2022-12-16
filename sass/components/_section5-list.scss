@@ -1,4 +1,6 @@
 .section5-list {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -10,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 208px;
     height: 92px;
     border: 1px solid $icons;
     border-radius: 4px;
@@ -18,6 +20,12 @@
     &:hover,
     &:focus {
         border: 1px solid $logo-blu;
+    }
+    @media screen and (min-width: 768px) {
+            
+        }
+    @media screen and (min-width:1200px) {
+        width: 168px;
     }
 }
 

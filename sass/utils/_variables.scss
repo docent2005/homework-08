@@ -8,3 +8,19 @@ $footer: #2F303A;
 $foter-no-general: rgba(255, 255, 255, 0.6);
 $icons: #AFB1B8;
 $time-animation: 250ms;
+
+@mixin mobile{
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+@mixin tablet{
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin desctop {
+    @media screen and (max-width: 1600px) {
+        @content;
+    }
+}

@@ -4,6 +4,9 @@
     flex-direction: column;
     gap: 8px;
     text-align: center;
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
 }
 
 .footer-list__link {

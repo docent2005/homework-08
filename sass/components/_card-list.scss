@@ -6,7 +6,7 @@
 }
 
 .card-list__content {
-    width: 370px;
+    max-width: 450px;
     margin: 0px;
 }
 
@@ -43,6 +43,10 @@
     line-height: 1.55555;
     letter-spacing: 0.03em;
     color: $general;
+}
+
+.card_image{
+    max-width: 450px;
 }
 
 .card-blok {

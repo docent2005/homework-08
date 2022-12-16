@@ -1,11 +1,15 @@
 .section2-list {
+
     display: flex;
     flex-wrap: wrap;
-    gap: 30px
+    gap: 30px;
+    
 }
 
 .section2-list__text {
-    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 450px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.142857;
@@ -36,6 +40,12 @@
     
     &.cosmonaut::before {
         background-image: url(../image/svg/astronaut\ 1.svg);
+    }
+    @media screen and (min-width: 768px) {
+            max-width: calc((738px - 30px) / 2);
+        }
+    @media screen and (min-width:1200px) {
+        max-width: calc((1170px - 90px) / 4);
     }
 }
 

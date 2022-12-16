@@ -1,8 +1,15 @@
 .contaner {
     display: flex;
-    margin: auto;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px 15px 0px 15px;
-    max-width: 1170px;
+    @media screen and (min-width:768px) {
+            max-width: 768px;
+        }
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;
+    }
 }
 
 .list {

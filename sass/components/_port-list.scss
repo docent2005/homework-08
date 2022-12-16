@@ -1,8 +1,8 @@
 .port-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     gap: 8px;
 }
 

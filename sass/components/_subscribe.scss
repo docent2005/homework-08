@@ -1,36 +1,59 @@
 .subscribe {
     padding-top: 12px;
+    @media screen and (min-width:1200px) {
+            padding-top: 0px;
+            margin-left: auto;
+    }
 }
 
 .subscribe__forms {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width:1200px) {
+        max-width: auto; 
+        align-items: flex-start;
+        flex-direction: row;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 .subscribe__lable {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (min-width:1200px) {
+        align-items: flex-start;
+    }
+    
 }
 
 .subscribe__input {
     margin-top: 20px;
-    width: 420px;
+    width: calc(100% - 30px);
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: $general;
     background-color: transparent;
+    @media screen and (min-width:1200px) {
+        width: 326px;
+    }
 }
 
 .subscribe__button>svg {
     width: 24px;
     height: 24px;
     fill: $general;
-
+    margin-left: 5px;
 }

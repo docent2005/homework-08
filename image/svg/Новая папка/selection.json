@@ -4,22 +4,22 @@
     {
       "icon": {
         "paths": [
-          "M1024 0l-1024 576 327.251 121.203 504.749-473.202-383.927 517.955 0.311 0.115-0.384-0.115v282.048l183.522-214.106 232.482 86.106 159.996-896.004z"
+          "M204.8 375.468v-68.268h614.4v68.268h-614.4zM204.8 546.132h614.4v-68.265h-614.4v68.265zM204.8 716.8h614.4v-68.268h-614.4v68.268z"
         ],
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "icon send"
+          "menu_40px"
         ],
         "colorPermutations": {}
       },
       "attrs": [],
       "properties": {
-        "order": 7,
-        "id": 7,
-        "name": "icon-send",
+        "order": 8,
+        "id": 8,
+        "name": "menu_40px",
         "prevSize": 32
       },
       "setIdx": 1,
