@@ -1,5 +1,9 @@
 .subscribe {
     padding-top: 12px;
+    @media screen and (min-width:768px) {
+            margin-left: auto;
+            margin-right: auto;
+    }
     @media screen and (min-width:1200px) {
             padding-top: 0px;
             margin-left: auto;
@@ -46,6 +50,9 @@
     border-radius: 4px;
     color: $general;
     background-color: transparent;
+    @media screen and (min-width:768px) {
+            width: 450px;
+    }
     @media screen and (min-width:1200px) {
         width: 326px;
     }

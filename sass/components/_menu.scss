@@ -1,4 +1,28 @@
-.menu-button{
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu_absol-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 48px 40px;
+    height: calc(100% - 96px);
+}
+
+.menu-button {
     margin-left: auto;
     background-color: $general;
     border: none;
@@ -7,74 +31,50 @@
     }
 }
 
-.menu-icon{
+.close{
+    position: absolute;
+    background-color: #fff;
+    right: 15px;
+    top: 10px;
+}
+
+.menu-icon {
     width: 40px;
     height: 40px;
     fill: #000;
 }
 
-.menu{
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translateX(100%);
-    transition: transform $time-animation cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
-    z-index: 999;
-}
-
-.is-open{
-    transform: translate(0);
-}
-
-.menu_absol-container{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 48px 40px;
-    height: calc(100% - 96px);
-}
-
-.js-close-menu {
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-}
-
-.menu_navigation{
+.menu_navigation {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-.menu_navigation_link{
+.menu_navigation_link {
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
     color: $text;
-    &:hover, &:focus{
+
+    &:hover,
+    &:focus {
         color: $logo-blu;
     }
 }
 
-.menu_container{
+.menu_container {
     margin-top: auto;
 }
 
-.menu_list{
+.menu_list {
     display: flex;
     flex-direction: column;
     gap: 32px;
     margin-bottom: 64px;
 }
 
-.menu_list_link-tel{
+.menu_list_link-tel {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
@@ -82,7 +82,7 @@
     color: $logo-blu;
 }
 
-.menu_list_link-emile{
+.menu_list_link-emile {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -90,12 +90,13 @@
     color: $text-no-general;
 }
 
-.menu_social{
+.menu_social {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-.menu_social_link{
+.menu_social_link {
     font-weight: 500;
     font-size: 18px;
     line-height: 122%;
@@ -103,6 +104,8 @@
     color: $logo-blu;
 }
 
-.menu_social_line{
+.menu_social_line {
     color: rgba(33, 33, 33, 0.2);
 }
+
+

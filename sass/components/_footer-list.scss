@@ -1,3 +1,10 @@
+.footer_hero-list{
+    @media screen and (min-width:768px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .footer-list {
     margin-top: 20px;
     display: flex;
