@@ -285,6 +285,15 @@ label {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .section1__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+  }
+}
+
 .section2 {
   padding-top: 60px;
   padding-bottom: 60px;
