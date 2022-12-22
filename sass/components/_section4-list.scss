@@ -30,7 +30,13 @@
 }
 
 .section4-list__image {
-    width: 100%;
+    max-width: 450px;
+    @media screen and (min-width: 768px) {
+       max-width: calc((738px - 30px) / 2);
+    }
+    @media screen and (min-width:1200px) {
+        max-width: calc((1170px - 90px) / 4);
+    }
 }
 
 .section4-list__main-text {

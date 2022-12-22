@@ -8,26 +8,50 @@
     justify-content: center;
     align-items: center;
     background-color: $footer;
+    background-size: cover;
     background-image:
         linear-gradient(0deg, rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),
-        url(../image/Header\ img.jpg);
+        url(../../image/hirox1px480.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image:
+            linear-gradient(0deg, rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),
+            url(../../image/hirox2px480.jpg);
+    }
     background-position: center;
     background-repeat: no-repeat;
-
     color: $general;
     @media screen and (min-width:768px) {
         max-width: 768px;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2),
                 rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),
-                url(../image/Header768.jpg);
+                url(../../image/hirox1px768.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    linear-gradient(0deg, rgba(0, 0, 0, 0.2),
+                        rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),
+                    url(../../image/hirox2px768.jpg);
+            }
     }
     @media screen and (min-width:1200px) {
         height: 600px;
         max-width: 1600px;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2),
                     rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),
-                url(../image/header1200.jpg);
+                url(../../image/hirox1px1200.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    linear-gradient(0deg, rgba(0, 0, 0, 0.2),
+                        rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),
+                    url(../../image/hirox2px1200.jpg);
+            }
     }
 }
 
